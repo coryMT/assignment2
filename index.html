@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <form id="musicForm">
+      <p>
+        <h1>Punk vs Hip Hop</h1>
+      </p>
+      <br/>
+
+      <fieldset>
+        <ul>
+          <li>
+            <input type="radio" id="punk" name="musicChoice" value="punk">
+            <label for="punk">Punk</label>
+          </li>
+          <li>
+            <input type="radio" id="hiphop" name="musicChoice" value="hiphop">
+            <label for="hiphop">Hip Hop</label>
+          </li>
+          <li>
+            <input type="button" onclick="completeForm()" value="Continue">
+          </li>
+          <li>
+            <p id="errorMusicChoice" class="error">
+              <!-- This will get filled by JavaScript as an error message. -->
+            </p>
+
+          </li>
+        </ul>
+
+      </fieldset>
+
+      <div class="hidden" id="punkInputs">
+        <p>
+          <h3>These are some of my favorite modern(ish) punk bands. Which do you like best?</h3>
+        </p>
+
+        <fieldset>
+          <ul>
+            <li>
+              <input type="radio" id="propagandhi" name="punkChoice" value="propagandhi">
+              <label for="propagandhi">Propagandhi</label>
+            </li>
+            <li>
+              <input type="radio" id="mischiefBrew" name="punkChoice" value="mischiefBrew">
+              <label for="mischiefBrew">Mischief Brew</label>
+            </li>
+            <li>
+              <input type="radio" id="nofx" name="punkChoice" value="nofx">
+              <label for="nofx">NOFX</label>
+            </li>
+            <li>
+              <input type="radio" id="theFlatliners" name="punkChoice" value="theFlatliners">
+              <label for="theFlatliners">The Flatliners</label>
+            </li>
+            <li>
+              <label for="newBand">Suggest your favorite!</label>
+              <input type="text" id="newBand" name="band_name" placeholder="Band Name">
+            </li>
+            <li>
+              <input type="button" onclick="submitForm()" value="Submit">
+            </li>
+            <li>
+              <p id="errorSubmitPunk" class="error">
+                <!-- This will get filled by JavaScript as an error message. -->
+              </p>
+
+            </li>
+          </ul>
+
+        </fieldset>
+
+      </div>
+
+      <div class="hidden" id="hipHopInputs">
+        <p>
+          <h3>These are some of my favorite modern hip hop artists. Which do you like best?</h3>
+        </p>
+
+        <fieldset>
+          <ul>
+            <li>
+              <input type="radio" id="asapRocky" name="hipHopChoice" value="asapRocky">
+              <label for="asapRocky">A$AP Rocky</label>
+            </li>
+            <li>
+              <input type="radio" id="vinceStaples" name="hipHopChoice" value="vinceStaples">
+              <label for="vinceStaples">Vince Staples</label>
+            </li>
+            <li>
+              <input type="radio" id="freddieGibbs" name="hipHopChoice" value="freddieGibbs">
+              <label for="freddieGibbs">Freddie Gibbs</label>
+            </li>
+            <li>
+              <input type="radio" id="dannyBrown" name="hipHopChoice" value="dannyBrown">
+              <label for="dannyBrown">Danny Brown</label>
+            </li>
+            <li>
+              <label for="newArtist">Suggest your favorite!</label>
+              <input type="text" id="newArtist" name="artist_name" placeholder="Artist Name">
+            </li>
+            <li>
+              <input type="button" onclick="submitForm()" value="Submit">
+            </li>
+            <li>
+              <p id="errorSubmitHipHop" class="error">
+                <!-- This will get filled by JavaScript as an error message. -->
+              </p>
+
+            </li>
+          </ul>
+
+        </fieldset>
+
+      </div>
+
+    </form>
+
+    <script src="js/myScript.js"></script>
+    <noscript>You need to turn on JavaScript for this to work!</noscript>
+  </body>
+
+</html>
