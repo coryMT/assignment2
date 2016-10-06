@@ -45,6 +45,7 @@ function submitForm(genre) {
 function removeElement() {
   var remove = document.querySelector('#musicForm');
   var success = document.createElement('p');
+  success.id='musicForm';
   success.innerHTML = '<h4>Success! Thank you for the recommendation!</h4>';
   remove.parentNode.replaceChild(success, remove);
 }
